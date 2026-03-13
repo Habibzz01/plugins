@@ -1,0 +1,16 @@
+{
+  "api_url": "https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current_weather=true",
+  "ui": {
+    "appBarTitle": "Cuaca Lokal Hari Ini",
+    "bgColor": "0xFF2A85FF",
+    "elements": [
+      { "type": "space", "height": 40 },
+      { "type": "icon", "icon_name": "cloud", "size": 120, "color": "0xFFFFFFFF" },
+      { "type": "space", "height": 24 },
+      { "type": "text", "value": "Suhu Saat Ini:", "size": 18, "bold": false, "color": "0xFFFFFFFF" },
+      { "type": "text", "value": "{current_weather.temperature} °C", "size": 64, "bold": true, "color": "0xFFFFFFFF" },
+      { "type": "space", "height": 16 },
+      { "type": "text", "value": "Kecepatan Angin: {current_weather.windspeed} km/h", "size": 16, "bold": false, "color": "0xFFFFFFFF" }
+    ]
+  }
+}
