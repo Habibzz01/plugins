@@ -1,19 +1,54 @@
 {
   "api_url": "http://ip-api.com/json/",
   "ui": {
-    "appBarTitle": "Pelacak IP Publik",
-    "bgColor": "0xFF4A148C",
+    "appBarTitle": "Network Intelligence",
+    "bgColor": "#1A1A2E",
+    "titleColor": "#FFFFFF",
+    "padding": 20,
     "elements": [
-      { "type": "space", "height": 40 },
-      { "type": "icon", "icon_name": "extension", "size": 100, "color": "0xFFFFFFFF" },
+      { "type": "space", "height": 20 },
+      {
+        "type": "card",
+        "bgColor": "#16213E",
+        "elevation": 8,
+        "radius": 20,
+        "children": [
+          {
+            "type": "row",
+            "mainAlign": "spaceBetween",
+            "children": [
+              { "type": "text", "value": "IP ADDRESS", "size": 12, "bold": true, "color": "#E94560" },
+              { "type": "icon", "icon_name": "wifi", "color": "#E94560", "size": 20 }
+            ]
+          },
+          { "type": "space", "height": 10 },
+          { "type": "text", "value": "{query}", "size": 32, "bold": true, "color": "#FFFFFF" },
+          { "type": "divider", "color": "#0F3460", "thickness": 2 },
+          { "type": "space", "height": 10 },
+          { "type": "text", "value": "ISP / PROVIDER", "size": 12, "bold": true, "color": "#4ECCA3" },
+          { "type": "text", "value": "{isp}", "size": 18, "bold": false, "color": "#FFFFFF" },
+          { "type": "space", "height": 15 },
+          {
+            "type": "row",
+            "children": [
+              { "type": "icon", "icon_name": "location", "color": "#4ECCA3", "size": 16 },
+              { "type": "space", "width": 8 },
+              { "type": "text", "value": "{city}, {regionName}", "size": 14, "color": "#EEEEEE" }
+            ]
+          }
+        ]
+      },
       { "type": "space", "height": 30 },
-      { "type": "text", "value": "IP Publik Anda:", "size": 16, "bold": false, "color": "0xFFE1BEE7" },
-      { "type": "text", "value": "{query}", "size": 42, "bold": true, "color": "0xFFFFFFFF" },
-      { "type": "space", "height": 30 },
-      { "type": "text", "value": "ISP: {isp}", "size": 18, "bold": true, "color": "0xFFFFFFFF" },
-      { "type": "space", "height": 8 },
-      { "type": "text", "value": "Lokasi: {city}, {regionName}", "size": 16, "bold": false, "color": "0xFFFFFFFF" },
-      { "type": "text", "value": "Negara: {country}", "size": 16, "bold": false, "color": "0xFFFFFFFF" }
+      {
+        "type": "button",
+        "label": "REFRESH CONNECTION",
+        "bgColor": "#E94560",
+        "textColor": "#FFFFFF",
+        "radius": 12,
+        "action_msg": "Memperbarui data jaringan..."
+      },
+      { "type": "space", "height": 20 },
+      { "type": "text", "value": "Negara: {country} ({countryCode})", "align": "center", "size": 12, "color": "#666666" }
     ]
   }
 }
