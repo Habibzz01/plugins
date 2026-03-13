@@ -1,0 +1,49 @@
+{
+  "api_url": "https://api.gold-api.com/v1/gold",
+  "ui": {
+    "appBarTitle": "Zakat & Logam Mulia",
+    "bgColor": "#0F0F0F",
+    "titleColor": "#FFD700",
+    "elements": [
+      { "type": "space", "height": 20 },
+      {
+        "type": "card",
+        "bgColor": "#1A1A1A",
+        "radius": 20,
+        "elevation": 10,
+        "children": [
+          { "type": "text", "value": "HARGA EMAS DUNIA (XAU)", "size": 12, "color": "#FFD700", "bold": true },
+          { "type": "space", "height": 10 },
+          {
+            "type": "row",
+            "mainAlign": "spaceBetween",
+            "children": [
+              { "type": "text", "value": "$ {price_gram}", "size": 32, "bold": true, "color": "#FFFFFF" },
+              { "type": "icon", "icon_name": "sun", "color": "#FFD700", "size": 30 }
+            ]
+          },
+          { "type": "divider", "color": "#333333" },
+          { "type": "text", "value": "Update: {updatedAt}", "size": 11, "color": "#888888" }
+        ]
+      },
+      { "type": "space", "height": 20 },
+      {
+        "type": "card",
+        "bgColor": "#FFD700",
+        "radius": 20,
+        "children": [
+          {
+            "type": "column",
+            "children": [
+              { "type": "text", "value": "INFO NISHAB ZAKAT MAL", "size": 14, "bold": true, "color": "#000000" },
+              { "type": "space", "height": 8 },
+              { "type": "text", "value": "Nishab zakat harta adalah setara dengan 85 gram emas. Jika harta Anda sudah mencapai nilai tersebut dan tersimpan selama 1 tahun, wajib mengeluarkan zakat 2,5%.", "size": 13, "color": "#000000" },
+              { "type": "space", "height": 15 },
+              { "type": "button", "label": "HITUNG ZAKAT SAYA", "bgColor": "#000000", "textColor": "#FFD700", "action_msg": "Rumus: Total Harta x 2,5%" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
