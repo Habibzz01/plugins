@@ -1,0 +1,19 @@
+{
+  "api_url": "http://ip-api.com/json/",
+  "ui": {
+    "appBarTitle": "Pelacak IP Publik",
+    "bgColor": "0xFF4A148C",
+    "elements": [
+      { "type": "space", "height": 40 },
+      { "type": "icon", "icon_name": "extension", "size": 100, "color": "0xFFFFFFFF" },
+      { "type": "space", "height": 30 },
+      { "type": "text", "value": "IP Publik Anda:", "size": 16, "bold": false, "color": "0xFFE1BEE7" },
+      { "type": "text", "value": "{query}", "size": 42, "bold": true, "color": "0xFFFFFFFF" },
+      { "type": "space", "height": 30 },
+      { "type": "text", "value": "ISP: {isp}", "size": 18, "bold": true, "color": "0xFFFFFFFF" },
+      { "type": "space", "height": 8 },
+      { "type": "text", "value": "Lokasi: {city}, {regionName}", "size": 16, "bold": false, "color": "0xFFFFFFFF" },
+      { "type": "text", "value": "Negara: {country}", "size": 16, "bold": false, "color": "0xFFFFFFFF" }
+    ]
+  }
+}
